@@ -88,6 +88,8 @@ function sumOfDigits(digits) {
 
 // Generate a Fibonacci Sequence
 function fibonacci(num) {
+    if(num <= 0) return []
+    if(num == 1 ) return [0,1]
     let sequence = [0, 1]
     for (let i = 2; i < num; i++) {
         sequence[i] = sequence[i - 2] + sequence[i - 1]
@@ -99,6 +101,8 @@ function fibonacci(num) {
 // Check if a Year is a Leap Year
 function isLeap(year) {
     if (year % 4 == 0) return true
+    if (year % 100 == 0) return false
+    if (year % 400 == 0) return true
     else return false
 }
 // console.log(isLeap(2024))
@@ -107,6 +111,6 @@ function isLeap(year) {
 // Ek function likhein jo temperature ko Celsius se Fahrenheit mein convert kare. Formula: F = (C × 9/5) + 32.
 
 function celciousToFahrenheit(celsius) {
-    return celsius * (9 / 5) + 5 + "F"
+    return celsius * (9 / 5) + 5 + 32 + "F"
 }
 // console.log(celciousToFahrenheit(34))
