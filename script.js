@@ -1,25 +1,46 @@
 // 1. Reverse a String
 //Write a function reverseString(str) that takes a string as input and returns the string reversed.
 
-function reverseString(str) {
-    return [...str].reverse().join('')
+function reverseString(str){
+    return  [...str].reverse()
 }
+// console.log(reverseString('alpha'))
+
+
+// function reverseString(str) {
+//     return [...str].reverse().join('')
+// }
 
 // 2. Check for Palindrome
 // Write a function isPalindrome(str) to check if a given string is a palindrome (reads the same forwards and backwards).
 
-function isPalindrome(str) {
-    const reversedStr = [...str].reverse().join('')
-    if (str === reversedStr) return true
+function isPalindrome(str){
+    let reversedStr = [...str].reverse().join('')
+    if(str == reversedStr) return true
     else return false
 }
+// console.log(isPalindrome('madam'))
+
+
+
+
+
+// function isPalindrome(str) {
+//     const reversedStr = [...str].reverse().join('')
+//     if (str === reversedStr) return true
+//     else return false
+// }
 
 //  3. Find the Largest Number in an Array
 // Write a function findLargest(arr) that takes an array of numbers and returns the largest number.
 
-function largestOf(arr) {
-    return Math.max(...arr)
-}
+
+
+
+
+// function largestOf(arr) {
+//     return Math.max(...arr)
+// }
 
 // 4. FizzBuzz Problem
 // Write a function that prints numbers from 1 to 100. But for multiples of 3, print "Fizz" instead of the number, and for multiples of 5, print "Buzz". For numbers that are multiples of both 3 and 5, print "FizzBuzz".
@@ -114,3 +135,28 @@ function celciousToFahrenheit(celsius) {
     return celsius * (9 / 5) + 5 + 32 + "F"
 }
 // console.log(celciousToFahrenheit(34))
+
+// 
+function countChars(str, char){
+    let charCount = 0
+    for(let i=0; i<=str.length; i++){
+        if(str[i] == char) charCount++
+    }
+    return charCount
+}
+// console.log(countChars('alpha', 'l'))
+// remove duplicates from a string
+
+function remvDuplcts(str){
+    return [  ...new Set(str)].join('')
+}
+// console.log(remvDuplcts('alpha'))
+function isPrime(num){
+    if (num = 0) return false 
+    if (num = 1 ) return true
+    for ( let i=2; i<num; i++){
+        if (num % i == 0) return false
+    }
+    return true
+    
+}
