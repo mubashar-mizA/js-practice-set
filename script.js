@@ -73,7 +73,7 @@ function FizzBuzz() {
 // 5. Remove Duplicates from an Array
 // Write a function removeDuplicates(arr) that takes an array and returns a new array with duplicates removed.
 
-function rmvDup(str){
+function rmvDup(str) {
     let splStr = str.split('').join('')
     return new Set(splStr).toString()
 }
@@ -86,6 +86,20 @@ function removeDuplicates(arr) {
 
 // 6. Count Vowels in a String
 // Write a function countVowels(str) that counts the number of vowels (a, e, i, o, u) in a given string.
+
+function countVow(str) {
+
+    let vowC = 0
+    let vowels = 'aeiou'
+    const eachCharOfStr = str.split('')
+    eachCharOfStr.forEach( (char) => {
+        if(vowels.includes(char)) vowC ++
+    } )
+
+    return vowC
+}
+
+console.log(countVow('alpha'))
 
 function countVowels(str) {
     let vowels = 'aeiou'
@@ -132,8 +146,8 @@ function sumOfDigits(digits) {
 
 // Generate a Fibonacci Sequence
 function fibonacci(num) {
-    if(num <= 0) return []
-    if(num == 1 ) return [0,1]
+    if (num <= 0) return []
+    if (num == 1) return [0, 1]
     let sequence = [0, 1]
     for (let i = 2; i < num; i++) {
         sequence[i] = sequence[i - 2] + sequence[i - 1]
@@ -160,26 +174,26 @@ function celciousToFahrenheit(celsius) {
 // console.log(celciousToFahrenheit(34))
 
 // 
-function countChars(str, char){
+function countChars(str, char) {
     let charCount = 0
-    for(let i=0; i<=str.length; i++){
-        if(str[i] == char) charCount++
+    for (let i = 0; i <= str.length; i++) {
+        if (str[i] == char) charCount++
     }
     return charCount
 }
 // console.log(countChars('alpha', 'l'))
 // remove duplicates from a string
 
-function remvDuplcts(str){
-    return [  ...new Set(str)].join('')
+function remvDuplcts(str) {
+    return [...new Set(str)].join('')
 }
 // console.log(remvDuplcts('alpha'))
-function isPrime(num){
-    if (num = 0) return false 
-    if (num = 1 ) return true
-    for ( let i=2; i<num; i++){
+function isPrime(num) {
+    if (num = 0) return false
+    if (num = 1) return true
+    for (let i = 2; i < num; i++) {
         if (num % i == 0) return false
     }
     return true
-    
+
 }
