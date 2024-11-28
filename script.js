@@ -73,6 +73,12 @@ function FizzBuzz() {
 // 5. Remove Duplicates from an Array
 // Write a function removeDuplicates(arr) that takes an array and returns a new array with duplicates removed.
 
+function rmvDup(str){
+    let splStr = str.split('').join('')
+    return new Set(splStr).toString()
+}
+console.log(rmvDup('alpha'))
+
 function removeDuplicates(arr) {
     return [... new Set(arr)]
 }
