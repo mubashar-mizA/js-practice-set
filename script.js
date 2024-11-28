@@ -87,28 +87,28 @@ function removeDuplicates(arr) {
 // 6. Count Vowels in a String
 // Write a function countVowels(str) that counts the number of vowels (a, e, i, o, u) in a given string.
 
-function countVow(str) {
+// function countVow(str) {
 
-    let vowC = 0
-    let vowels = 'aeiou'
-    const eachCharOfStr = str.split('')
-    eachCharOfStr.forEach( (char) => {
-        if(vowels.includes(char)) vowC ++
-    } )
+//     let vowC = 0
+//     let vowels = 'aeiou'
+//     const eachCharOfStr = str.split('')
+//     eachCharOfStr.forEach( (char) => {
+//         if(vowels.includes(char)) vowC ++
+//     } )
 
-    return vowC
-}
+//     return vowC
+// }
 
-console.log(countVow('alpha'))
+// console.log(countVow('alpha'))
 
-function countVowels(str) {
-    let vowels = 'aeiou'
+// function countVowels(str) {
+//     let vowels = 'aeiou'
 
-    let vowelCount = 0
-    for (let char of str.toLowerCase()) { // alpha => ['a','l','p','h','a']
-        if (vowels.includes(char)) vowelCount++
-    }
-    return vowelCount
+//     let vowelCount = 0
+//     for (let char of str.toLowerCase()) { // alpha => ['a','l','p','h','a']
+//         if (vowels.includes(char)) vowelCount++
+//     }
+//     return vowelCount
 }
 // console.log(countVowels('alpha'))
 
