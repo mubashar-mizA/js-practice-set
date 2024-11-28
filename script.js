@@ -1,10 +1,10 @@
 // 1. Reverse a String
 //Write a function reverseString(str) that takes a string as input and returns the string reversed.
 
-function ReverseAStr(str){
-    return str.split('').reverse().join('')
-}
-console.log(ReverseAStr('alpha'))
+// function ReverseAStr(str){
+//     return str.split('').reverse().join('')
+// }
+// console.log(ReverseAStr('alpha'))
 
 // function reverseString(str){
 //     return  [...str].reverse()
@@ -19,11 +19,18 @@ console.log(ReverseAStr('alpha'))
 // 2. Check for Palindrome
 // Write a function isPalindrome(str) to check if a given string is a palindrome (reads the same forwards and backwards).
 
-function isPalindrome(str){
-    let reversedStr = [...str].reverse().join('')
-    if(str == reversedStr) return true
-    else return false
-}
+// function isPal(str){
+//     let reversedStr = str.split('').reverse().join('')
+//     if(str === reversedStr) return true
+//     else return false 
+// }
+// console.log(isPal('alpha'))
+
+// function isPalindrome(str){
+//     let reversedStr = [...str].reverse().join('')
+//     if(str == reversedStr) return true
+//     else return false
+// }
 // console.log(isPalindrome('madam'))
 
 
