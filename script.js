@@ -1,9 +1,14 @@
 // 1. Reverse a String
 //Write a function reverseString(str) that takes a string as input and returns the string reversed.
 
-function reverseString(str){
-    return  [...str].reverse()
+function ReverseAStr(str){
+    return str.split('').reverse().join('')
 }
+console.log(ReverseAStr('alpha'))
+
+// function reverseString(str){
+//     return  [...str].reverse()
+// }
 // console.log(reverseString('alpha'))
 
 
