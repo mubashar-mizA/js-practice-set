@@ -46,10 +46,10 @@
 //  3. Find the Largest Number in an Array
 // Write a function findLargest(arr) that takes an array of numbers and returns the largest number.
 
-function largest(str){
-    return Math.max(...str)
-}
-console.log(largest('1234'))
+// function largest(str){
+//     return Math.max(...str)
+// }
+// console.log(largest('1234'))
 
 
 
