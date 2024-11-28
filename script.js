@@ -109,7 +109,7 @@ function removeDuplicates(arr) {
 //         if (vowels.includes(char)) vowelCount++
 //     }
 //     return vowelCount
-}
+// }
 // console.log(countVowels('alpha'))
 
 // 7. Find the Second Largest Number
