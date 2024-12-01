@@ -199,3 +199,13 @@ function isPrime(num) {
     return true
 
 }
+//  higher order functions 
+function applyOperation(operation, a, b) {
+    return operation(a, b)
+}
+
+function add(x, y) {
+    return x + y
+}
+
+console.log(applyOperation(add, 2, 1))
