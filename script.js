@@ -1,3 +1,50 @@
+function ab(nums){
+    let numsInStr = nums.toString()
+    console.log(numsInStr)
+    const lengthOfNums = [...numsInStr].length
+    console.log(lengthOfNums)
+    return lengthOfNums
+}   
+console.log(ab(123343))
+
+let products = [
+    {
+        name:'oppo',
+        price:2000,
+        category:'mobile'
+    },
+    {
+        name:'samsung',
+        price:3000,
+        category:'mobile'
+    },
+    {
+        name:'hp pro',
+        price:2500,
+        category:'laptop'
+    },
+    {
+        name:'del pro',
+        price:2000,
+        category:'laptop'
+    },
+    {
+        name:'watch',
+        price:200,
+        category:'gadget'
+    },
+    {
+        name:'elite',
+        price:2500,
+        category:'laptop'
+    },
+]
+
+const laptops = products.filter( (prodct)=> prodct.category == 'laptop'  )
+console.log(laptops)
+
+
+
 // 1. Reverse a String
 //Write a function reverseString(str) that takes a string as input and returns the string reversed.
 
