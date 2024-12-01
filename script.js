@@ -181,6 +181,7 @@ function countChars(str, char) {
     }
     return charCount
 }
+
 // console.log(countChars('alpha', 'l'))
 // remove duplicates from a string
 
@@ -188,6 +189,7 @@ function remvDuplcts(str) {
     return [...new Set(str)].join('')
 }
 // console.log(remvDuplcts('alpha'))
+
 function isPrime(num) {
     if (num = 0) return false
     if (num = 1) return true
