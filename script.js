@@ -1,3 +1,15 @@
+function performOper(operation, a,b){
+    return operation(a,b)
+}
+
+function ad(x,y){
+    return x+y
+}
+
+
+console.log(performOper(ad,1,2))
+
+
 function ab(nums){
     let numsInStr = nums.toString()
     console.log(numsInStr)
